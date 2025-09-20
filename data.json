@@ -1,53 +1,27 @@
-
 {
   "syllabus": [
     { "path": "Syllabus/BMC102_151_Problem_Solving_Using_C_Syllabus_MCA_1st_Sem.pdf" },
-    { "path": "Syllabus/MCA _First_Year_Detailed_Syllabus_2024-25.pdf"}
+    { "path": "Syllabus/MCA_First_Year_Detailed_Syllabus_2024-25.pdf" }
   ],
   "notes": {
     "UNIT-1": [
-      { "path": "Notes/UNIT-1/Structured Programming.pdf" }
-      
+      { "path": "Notes/UNIT-1/Structured_Programming.pdf" }
     ],
-    "UNIT-2": [
-      { },
-      { },
-      { },
-      { }
-    ],
-    "UNIT-3": [
-      { },
-      { },
-      { }
-    ],
-    "UNIT-4": [
-      { },
-      { }
-    ],
-    "UNIT-5": [
-      { }
-    ]
+    "UNIT-2": [],
+    "UNIT-3": [],
+    "UNIT-4": [],
+    "UNIT-5": []
   },
   "programs": {
     "UNIT-1": [
-      { },
-      { },
       { "path": "Programs/UNIT-1/test.c", "hidden": true }
     ],
-    "UNIT-2": [
-      { },
-      { }
-    ],
+    "UNIT-2": [],
     "UNIT-3": [
-      { },
       { "path": "Programs/UNIT-3/test.c", "hidden": true }
     ],
-    "UNIT-4": [
-      { }
-    ],
-    "UNIT-5": [
-      { }
-    ]
+    "UNIT-4": [],
+    "UNIT-5": []
   },
   "assignments": {
     "UNIT-1": [
@@ -60,11 +34,10 @@
   },
   "ebooks": [
     { "path": "ebooks/LetUsC_YPK_17thEdition.pdf" },
-    { "path": "ebooks/exploring C.pdf" },
+    { "path": "ebooks/Exploring_C.pdf" },
     { "path": "ebooks/LetUsC_YPK_5thEdition.pdf" },
-    { "path": "ebooks/C Programming Tutorial_tutorialspoint.com.pdf" },
-    { "path": "ebooks/Deitel _C How To Program 6th Edition.pdf" },
-    { "path": "ebooks/C Programming Tutorial_K&R.pdf" }
-    
+    { "path": "ebooks/C_Programming_Tutorial_tutorialspoint.com.pdf" },
+    { "path": "ebooks/Deitel_C_How_To_Program_6th_Edition.pdf" },
+    { "path": "ebooks/C_Programming_Tutorial_K&R.pdf" }
   ]
 }
