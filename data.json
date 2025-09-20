@@ -34,10 +34,10 @@
   },
   "ebooks": [
     { "path": "ebooks/LetUsC_YPK_17thEdition.pdf" },
-    { "path": "ebooks/Exploring_C.pdf" },
+    { "path": "ebooks/Exploring_C.pdf", "hidden": true },
     { "path": "ebooks/LetUsC_YPK_5thEdition.pdf" },
-    { "path": "ebooks/C_Programming_Tutorial_tutorialspoint.com.pdf" },
-    { "path": "ebooks/Deitel_C_How_To_Program_6th_Edition.pdf" },
-    { "path": "ebooks/C_Programming_Tutorial_K&R.pdf" }
+    { "path": "ebooks/C_Programming_Tutorial_tutorialspoint.com.pdf", "hidden": true },
+    { "path": "ebooks/Deitel_C_How_To_Program_6th_Edition.pdf", "hidden": true },
+    { "path": "ebooks/C_Programming_Tutorial_K&R.pdf", "hidden": true }
   ]
 }
