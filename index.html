@@ -21,7 +21,7 @@
   li { margin:5px 0; padding:5px 10px; word-break:break-word; display:block; }
   .actions { float:right; }
   .unit-content li .actions { display:inline-block; margin-top:3px; float:none; }
-  b.unit-title, b.ebook-title, b.syllabus-title { cursor:pointer; display:inline-block; color:#2d6cdf; margin:10px 0; padding:5px 10px; text-align:left; }
+  b.unit-title, b.ebook-title, b.syllabus-title, b.exam-title { cursor:pointer; display:inline-block; color:#2d6cdf; margin:10px 0; padding:5px 10px; text-align:left; }
   a { text-decoration:none; color:#1a4bb7; font-weight:500; }
   a:hover { text-decoration:underline; color:#d35400; }
   .download { background:#2d6cdf; color:white; padding:2px 8px; border-radius:5px; font-size:0.85em; margin-left:5px; white-space:nowrap; }
@@ -32,7 +32,7 @@
   @media(max-width:600px){
     nav a { margin:3px 2px; padding:5px 8px; font-size:0.85em; }
     .container { padding:15px; }
-    b.unit-title, b.ebook-title, b.syllabus-title { font-size:1em; display:block; }
+    b.unit-title, b.ebook-title, b.syllabus-title, b.exam-title { font-size:1em; display:block; }
     #controls { flex-direction:column; }
   }
 </style>
@@ -49,6 +49,7 @@
     <a href="#programs">Programs</a>
     <a href="#assignments">Assignments</a>
     <a href="#ebooks">Ebooks</a>
+    <a href="#examPapers">Exam Papers</a>
   </nav>
 
   <div id="controls">
@@ -71,6 +72,9 @@
 
   <h2 id="ebooks">Ebooks</h2>
   <div id="ebooks-list"></div>
+
+  <h2 id="examPapers">Exam Papers</h2>
+  <div id="examPapers-list"></div>
 </div>
 
 <footer>
@@ -80,7 +84,7 @@
 <script>
 const rawBase = "https://raw.githubusercontent.com/naveenupreti/Problem_Solving_Using_C/main/";
 
-// Cache-buster (timestamp)
+// Cache-buster
 function getCacheBuster() {
   return "?v=" + new Date().getTime();
 }
@@ -92,7 +96,7 @@ function normalizeFileEntry(entry) {
   return null;
 }
 
-// Render collapsible file list (for syllabus, ebooks)
+// Render collapsible file list
 function renderCollapsibleList(containerId, files, cssClass) {
   const container = document.getElementById(containerId);
   container.innerHTML = "";
@@ -136,7 +140,7 @@ function renderCollapsibleList(containerId, files, cssClass) {
   });
 }
 
-// Render units (notes, programs, assignments)
+// Render units (for notes, programs, assignments)
 function renderUnits(containerId, unitsObj) {
   const container = document.getElementById(containerId);
   container.innerHTML = "";
@@ -205,6 +209,7 @@ async function loadData(force = false) {
   renderUnits("programs-list", data.programs);
   renderUnits("assignments-list", data.assignments);
   renderCollapsibleList("ebooks-list", data.ebooks, "ebook-title");
+  renderCollapsibleList("examPapers-list", data.examPapers, "exam-title");
 }
 
 // Initialize
