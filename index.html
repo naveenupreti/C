@@ -7,12 +7,12 @@
 <style>
   html { scroll-padding-top: 50px; }
   body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f5f7fa; color:#333; font-size:1rem; }
-  
+
   /* Header */
   header { background:#2d6cdf; color:white; padding:5px 10px; text-align:center; position:sticky; top:0; z-index:1000; }
   header h1 { margin:0; font-size:1.3em; display:inline; }
   header p { margin:2px 0 0 0; font-size:0.75em; }
-  
+
   nav { margin-top:3px; }
   nav a { color:white; text-decoration:none; margin:0 6px; font-weight:bold; padding:3px 6px; border-radius:4px; transition:0.3s; display:inline-block; margin-bottom:3px; font-size:0.9em; }
   nav a:hover { text-decoration:underline; color:#ffdd57; }
@@ -30,7 +30,7 @@
   li { margin:4px 0; padding:4px 8px; word-break:break-word; display:block; font-size:0.95em; }
   .actions { float:right; }
   .unit-content li .actions { display:inline-block; margin-top:2px; float:none; }
-  
+
   /* Collapsible titles */
   b.unit-title, b.ebook-title, b.syllabus-title, b.exampaper-title, b.assignment-title {
     cursor:pointer;
@@ -48,7 +48,7 @@
     margin-right:4px;
     font-weight:bold;
   }
-  
+
   a { text-decoration:none; color:#1a4bb7; font-weight:500; }
   a:hover { text-decoration:underline; color:#d35400; }
 
@@ -134,7 +134,7 @@ function createIcon() {
   return icon;
 }
 
-// Render collapsible file list (syllabus, ebooks, exampapers, assignments)
+// Render collapsible list (syllabus, assignments, ebooks, exampapers)
 function renderCollapsibleList(containerId, files, cssClass) {
   const container = document.getElementById(containerId);
   container.innerHTML = "";
@@ -151,7 +151,7 @@ function renderCollapsibleList(containerId, files, cssClass) {
 
   const ul = document.createElement("ul");
   ul.className = "unit-content";
-  ul.style.display = "none"; // collapsed by default
+  ul.style.display = "none";
 
   const cacheBuster = getCacheBuster();
   files.forEach(f => {
@@ -176,7 +176,7 @@ function renderCollapsibleList(containerId, files, cssClass) {
   });
 }
 
-// Render units (for notes_programs)
+// Render Notes_Programs units
 function renderUnits(containerId, unitsObj) {
   const container = document.getElementById(containerId);
   container.innerHTML = "";
@@ -186,7 +186,6 @@ function renderUnits(containerId, unitsObj) {
   }
 
   const cacheBuster = getCacheBuster();
-
   for (const [unitName, files] of Object.entries(unitsObj)) {
     const li = document.createElement("li");
     const icon = createIcon();
@@ -196,7 +195,7 @@ function renderUnits(containerId, unitsObj) {
 
     const ul = document.createElement("ul");
     ul.className = "unit-content";
-    ul.style.display = "none"; // collapsed by default
+    ul.style.display = "none";
 
     files.forEach(f => {
       const fileObj = normalizeFileEntry(f);

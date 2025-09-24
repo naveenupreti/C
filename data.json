@@ -6,32 +6,32 @@
 
   "notes_programs": {
     "UNIT-1": [
-      { "path": "Notes/UNIT-1/Structured_Programming.pdf" },
-      { "path": "Notes/UNIT-1/LUC_Chapter1_Introduction.pdf" },
-      { "path": "Notes/UNIT-1/LUC_Chapter11_ConsoleInputOutput.pdf" },
-      { "path": "Notes/UNIT-1/LUC_PrecedenceTable_StandardLibraryFunctions_ASCII_chart.pdf" },
-      { "path": "Programs/UNIT-1/test.c", "hidden": true },
-      { "path": "Programs/UNIT-1/data_types_size.c" }
+      { "path": "Notes_Programs/UNIT-1/Structured_Programming.pdf" },
+      { "path": "Notes_Programs/UNIT-1/LUC_Chapter1_Introduction.pdf" },
+      { "path": "Notes_Programs/UNIT-1/LUC_Chapter11_ConsoleInputOutput.pdf" },
+      { "path": "Notes_Programs/UNIT-1/LUC_PrecedenceTable_StandardLibraryFunctions_ASCII_chart.pdf" },
+      { "path": "Notes_Programs/UNIT-1/test.c", "hidden": true },
+      { "path": "Notes_Programs/UNIT-1/data_types_size.c" }
     ],
     "UNIT-2": [
-      { "path": "Notes/UNIT-2/LUC_Chapter2_Decision_Control_Structure.pdf" },
-      { "path": "Notes/UNIT-2/LUC_Chapter4_switch_case.pdf" },
-      { "path": "Notes/UNIT-2/LUC_Chapter3_Loops.pdf" },
-      { "path": "Notes/UNIT-2/LUC_Chapter5_Functions_and_Pointers.pdf" }
+      { "path": "Notes_Programs/UNIT-2/LUC_Chapter2_Decision_Control_Structure.pdf" },
+      { "path": "Notes_Programs/UNIT-2/LUC_Chapter4_switch_case.pdf" },
+      { "path": "Notes_Programs/UNIT-2/LUC_Chapter3_Loops.pdf" },
+      { "path": "Notes_Programs/UNIT-2/LUC_Chapter5_Functions_and_Pointers.pdf" }
     ],
     "UNIT-3": [
-      { "path": "Notes/UNIT-3/LUC_Chapter5_Functions_and_Pointers.pdf" },
-      { "path": "Notes/UNIT-3/LUC_Chapter8_Arrays.pdf" },
-      { "path": "Notes/UNIT-3/LUC_Chapter9_Strings.pdf" },
-      { "path": "Programs/UNIT-3/test.c", "hidden": true }
+      { "path": "Notes_Programs/UNIT-3/LUC_Chapter5_Functions_and_Pointers.pdf" },
+      { "path": "Notes_Programs/UNIT-3/LUC_Chapter8_Arrays.pdf" },
+      { "path": "Notes_Programs/UNIT-3/LUC_Chapter9_Strings.pdf" },
+      { "path": "Notes_Programs/UNIT-3/test.c", "hidden": true }
     ],
     "UNIT-4": [
-      { "path": "Notes/UNIT-4/LUC_Chapter10_Structures.pdf" },
-      { "path": "Notes/UNIT-4/LUC_Chapter6_DataTypes_StorageClasses.pdf" }
+      { "path": "Notes_Programs/UNIT-4/LUC_Chapter10_Structures.pdf" },
+      { "path": "Notes_Programs/UNIT-4/LUC_Chapter6_DataTypes_StorageClasses.pdf" }
     ],
     "UNIT-5": [
-      { "path": "Notes/UNIT-5/LUC_Chapter12_13_FileHandling.pdf" },
-      { "path": "Notes/UNIT-5/LUC_Chapter7_PreprocessorDirectives.pdf" }
+      { "path": "Notes_Programs/UNIT-5/LUC_Chapter12_13_FileHandling.pdf" },
+      { "path": "Notes_Programs/UNIT-5/LUC_Chapter7_PreprocessorDirectives.pdf" }
     ]
   },
 
