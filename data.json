@@ -5,8 +5,11 @@
   ],
   "notes": {
     "UNIT-1": [
-      { "path": "Notes/UNIT-1/Structured_Programming.pdf" }
-    ],
+      { "path": "Notes/UNIT-1/Structured_Programming.pdf" },
+      { "path": "Notes/UNIT-1/LUC_Chapter1_Introduction.pdf" },
+      { "path": "Notes/UNIT-1/LUC_Chapter11_ConsoleInputOutput.pdf" },
+      { "path": "Notes/UNIT-1/LUC_PrecedenceTable_StandardLibraryFunctions_ASCII_chart.pdf" }
+  ],
     "UNIT-2": [],
     "UNIT-3": [],
     "UNIT-4": [],
