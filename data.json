@@ -16,9 +16,19 @@
       { "path": "Notes/UNIT-2/LUC_Chapter3_Loops.pdf" },
       { "path": "Notes/UNIT-2/LUC_Chapter5_Functions_and_Pointers.pdf" }
     ],
-    "UNIT-3": [],
-    "UNIT-4": [],
-    "UNIT-5": []
+    "UNIT-3": [
+      { "path": "Notes/UNIT-3/LUC_Chapter5_Functions_and_Pointers.pdf" },
+      { "path": "Notes/UNIT-3/LUC_Chapter8_Arrays.pdf" },
+      { "path": "Notes/UNIT-3/LUC_Chapter9_Strings.pdf" }
+    ],
+    "UNIT-4": [
+      { "path": "Notes/UNIT-4/LUC_Chapter10_Structures.pdf" },
+      { "path": "Notes/UNIT-4/LUC_Chapter6_DataTypes_StorageClasses.pdf" }
+    ],
+    "UNIT-5": [
+      { "path": "Notes/UNIT-5/LUC_Chapter12_13_FileHandling.pdf" },
+      { "path": "Notes/UNIT-5/LUC_Chapter7_PreprocessorDirectives.pdf" }
+    ]
   },
   "programs": {
     "UNIT-1": [
