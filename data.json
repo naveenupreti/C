@@ -10,7 +10,12 @@
       { "path": "Notes/UNIT-1/LUC_Chapter11_ConsoleInputOutput.pdf" },
       { "path": "Notes/UNIT-1/LUC_PrecedenceTable_StandardLibraryFunctions_ASCII_chart.pdf" }
   ],
-    "UNIT-2": [],
+    "UNIT-2": [
+      { "path": "Notes/UNIT-2/LUC_Chapter2_Decision_Control_Structure.pdf" },
+      { "path": "Notes/UNIT-2/LUC_Chapter4_switch_case.pdf" },
+      { "path": "Notes/UNIT-2/LUC_Chapter3_Loops.pdf" },
+      { "path": "Notes/UNIT-2/LUC_Chapter5_Functions_and_Pointers.pdf" }
+    ],
     "UNIT-3": [],
     "UNIT-4": [],
     "UNIT-5": []
