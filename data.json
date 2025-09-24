@@ -42,16 +42,10 @@
     "UNIT-4": [],
     "UNIT-5": []
   },
-  "assignments": {
-    "UNIT-1": [
+  "assignments": [
       { "path": "Assignments/UNIT-1/Assignment1.pdf" }
     ],
-    "UNIT-2": [],
-    "UNIT-3": [],
-    "UNIT-4": [],
-    "UNIT-5": []
-  },
-  "ebooks": [
+ "ebooks": [
     { "path": "ebooks/LetUsC_YPK_17thEdition.pdf" },
     { "path": "ebooks/Exploring_C.pdf", "hidden": true },
     { "path": "ebooks/LetUsC_YPK_5thEdition.pdf" },
