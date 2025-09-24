@@ -61,8 +61,8 @@
     { "path": "ebooks/C_Programming_Tutorial_K&R.pdf", "hidden": true }
   ],
   "examPapers": [
-    { "path": "ExamPapers/BMC102_MidTerm_2023.pdf" },
-    { "path": "ExamPapers/BMC102_EndTerm_2023.pdf" },
-    { "path": "ExamPapers/BMC102_Supplementary_2024.pdf" }
+    { "path": "ExamPapers/Sessional_1_PaperFormat_BMC102.pdf" },
+    { "path": "ExamPapers/Session_2_PaperFormat_BMC102.pdf" },
+    { "path": "ExamPapers/Sessional_3_PaperFormat_BMC102.pdf" }
   ]
 }
