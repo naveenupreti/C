@@ -32,7 +32,7 @@
   .unit-content li .actions { display:inline-block; margin-top:2px; float:none; }
   
   /* Collapsible titles */
-  b.unit-title, b.ebook-title, b.syllabus-title, b.exampaper-title {
+  b.unit-title, b.ebook-title, b.syllabus-title, b.exampaper-title,b.assignment-title {
     cursor:pointer;
     display:inline-block;
     color:#2d6cdf;
@@ -246,7 +246,7 @@ async function loadData(force = false) {
   renderCollapsibleList("syllabus-list", data.syllabus, "syllabus-title");
   renderUnits("notes-list", data.notes);
   renderUnits("programs-list", data.programs);
-  renderUnits("assignments-list", data.assignments);
+  renderCollapsibleList("assignments-list", data.assignments, "assignment-title");
   renderCollapsibleList("ebooks-list", data.ebooks, "ebook-title");
   renderCollapsibleList("exampapers-list", data.exampapers, "exampaper-title");
 }
