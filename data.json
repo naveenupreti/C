@@ -3,13 +3,16 @@
     { "path": "Syllabus/BMC102_151_Problem_Solving_Using_C_Syllabus_MCA_1st_Sem.pdf" },
     { "path": "Syllabus/MCA_First_Year_Detailed_Syllabus_2024-25.pdf" }
   ],
-  "notes": {
+
+  "notes_programs": {
     "UNIT-1": [
       { "path": "Notes/UNIT-1/Structured_Programming.pdf" },
       { "path": "Notes/UNIT-1/LUC_Chapter1_Introduction.pdf" },
       { "path": "Notes/UNIT-1/LUC_Chapter11_ConsoleInputOutput.pdf" },
-      { "path": "Notes/UNIT-1/LUC_PrecedenceTable_StandardLibraryFunctions_ASCII_chart.pdf" }
-  ],
+      { "path": "Notes/UNIT-1/LUC_PrecedenceTable_StandardLibraryFunctions_ASCII_chart.pdf" },
+      { "path": "Programs/UNIT-1/test.c", "hidden": true },
+      { "path": "Programs/UNIT-1/data_types_size.c" }
+    ],
     "UNIT-2": [
       { "path": "Notes/UNIT-2/LUC_Chapter2_Decision_Control_Structure.pdf" },
       { "path": "Notes/UNIT-2/LUC_Chapter4_switch_case.pdf" },
@@ -19,7 +22,8 @@
     "UNIT-3": [
       { "path": "Notes/UNIT-3/LUC_Chapter5_Functions_and_Pointers.pdf" },
       { "path": "Notes/UNIT-3/LUC_Chapter8_Arrays.pdf" },
-      { "path": "Notes/UNIT-3/LUC_Chapter9_Strings.pdf" }
+      { "path": "Notes/UNIT-3/LUC_Chapter9_Strings.pdf" },
+      { "path": "Programs/UNIT-3/test.c", "hidden": true }
     ],
     "UNIT-4": [
       { "path": "Notes/UNIT-4/LUC_Chapter10_Structures.pdf" },
@@ -30,22 +34,12 @@
       { "path": "Notes/UNIT-5/LUC_Chapter7_PreprocessorDirectives.pdf" }
     ]
   },
-  "programs": {
-    "UNIT-1": [
-      { "path": "Programs/UNIT-1/test.c", "hidden": true },
-      { "path": "Programs/UNIT-1/data_types_size.c"}
-    ],
-    "UNIT-2": [],
-    "UNIT-3": [
-      { "path": "Programs/UNIT-3/test.c", "hidden": true }
-    ],
-    "UNIT-4": [],
-    "UNIT-5": []
-  },
+
   "assignments": [
-      { "path": "Assignments/ImportantQuestions_BMC102_ProblemSolvingUsingC.pdf" }
-    ],
- "ebooks": [
+    { "path": "Assignments/ImportantQuestions_BMC102_ProblemSolvingUsingC.pdf" }
+  ],
+
+  "ebooks": [
     { "path": "ebooks/LetUsC_YPK_17thEdition.pdf" },
     { "path": "ebooks/Exploring_C.pdf", "hidden": true },
     { "path": "ebooks/LetUsC_YPK_5thEdition.pdf" },
@@ -55,6 +49,7 @@
     { "path": "ebooks/Deitel_C_How_To_Program_6th_Edition.pdf", "hidden": true },
     { "path": "ebooks/C_Programming_Tutorial_K&R.pdf", "hidden": true }
   ],
+
   "exampapers": [
     { "path": "ExamPapers/Sessional_1_PaperFormat_BMC102.pdf" },
     { "path": "ExamPapers/Session_2_PaperFormat_BMC102.pdf" },
