@@ -32,7 +32,8 @@
   },
   "programs": {
     "UNIT-1": [
-      { "path": "Programs/UNIT-1/test.c", "hidden": true }
+      { "path": "Programs/UNIT-1/test.c", "hidden": true },
+      { "path": "Programs/UNIT-1/data_types_size.c"}
     ],
     "UNIT-2": [],
     "UNIT-3": [
