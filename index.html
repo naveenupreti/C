@@ -176,16 +176,27 @@ function renderCollapsibleList(containerId, files, cssClass) {
   });
 }
 
-// Render Notes_Programs units
-function renderUnits(containerId, unitsObj) {
+// Render Notes_Programs with outer and inner collapsibles
+function renderNotesPrograms(containerId, unitsObj) {
   const container = document.getElementById(containerId);
   container.innerHTML = "";
+
   if (!unitsObj || Object.keys(unitsObj).length === 0) {
     container.innerHTML = "<p>No data available.</p>";
     return;
   }
 
-  const cacheBuster = getCacheBuster();
+  // Outer collapsible for Notes_Programs
+  const liOuter = document.createElement("li");
+  const iconOuter = createIcon();
+  liOuter.innerHTML = `<b class="unit-title"></b>`;
+  liOuter.querySelector("b").appendChild(iconOuter);
+  liOuter.querySelector("b").appendChild(document.createTextNode("Notes_Programs"));
+
+  const ulOuter = document.createElement("ul");
+  ulOuter.className = "unit-content";
+  ulOuter.style.display = "none";
+
   for (const [unitName, files] of Object.entries(unitsObj)) {
     const li = document.createElement("li");
     const icon = createIcon();
@@ -197,6 +208,7 @@ function renderUnits(containerId, unitsObj) {
     ul.className = "unit-content";
     ul.style.display = "none";
 
+    const cacheBuster = getCacheBuster();
     files.forEach(f => {
       const fileObj = normalizeFileEntry(f);
       if (!fileObj || fileObj.hidden) return;
@@ -211,13 +223,23 @@ function renderUnits(containerId, unitsObj) {
     });
 
     li.appendChild(ul);
-    container.appendChild(li);
+    ulOuter.appendChild(li);
 
+    // Unit-level collapsible
     li.querySelector("b").addEventListener("click", () => {
       ul.style.display = ul.style.display === "block" ? "none" : "block";
       icon.textContent = ul.style.display === "block" ? "−" : "+";
     });
   }
+
+  liOuter.appendChild(ulOuter);
+  container.appendChild(liOuter);
+
+  // Notes_Programs collapsible
+  liOuter.querySelector("b").addEventListener("click", () => {
+    ulOuter.style.display = ulOuter.style.display === "block" ? "none" : "block";
+    iconOuter.textContent = ulOuter.style.display === "block" ? "−" : "+";
+  });
 }
 
 // Load data.json
@@ -239,7 +261,7 @@ async function loadData(force = false) {
   }
 
   renderCollapsibleList("syllabus-list", data.syllabus, "syllabus-title");
-  renderUnits("notes_programs-list", data.notes_programs);
+  renderNotesPrograms("notes_programs-list", data.notes_programs);
   renderCollapsibleList("assignments-list", data.assignments, "assignment-title");
   renderCollapsibleList("ebooks-list", data.ebooks, "ebook-title");
   renderCollapsibleList("exampapers-list", data.exampapers, "exampaper-title");
