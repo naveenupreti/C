@@ -6,7 +6,7 @@
 int main()
 {
   int i;
-  char *arr[] = {"Geek", "Geeks", "Geekfor"};
+  char *arr[] = {"Naveen", "Chandra", "Upreti"};
   printf("String array Elements are:\n");
   printf("sizeof(arr)=%d\n",sizeof(arr));
 
