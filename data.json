@@ -23,6 +23,8 @@
       { "path": "Notes_Programs/UNIT-3/LUC_Chapter5_Functions_and_Pointers.pdf" },
       { "path": "Notes_Programs/UNIT-3/LUC_Chapter8_Arrays.pdf" },
       { "path": "Notes_Programs/UNIT-3/LUC_Chapter9_Strings.pdf" },
+      { "path": "Notes_Programs/UNIT-3/string_paragraph_input.c"},
+      { "path": "Notes_Programs/UNIT-3/StringFunctions.c"},
       { "path": "Notes_Programs/UNIT-3/test.c", "hidden": true }
     ],
     "UNIT-4": [
