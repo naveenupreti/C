@@ -31,8 +31,8 @@
       { "path": "Notes_Programs/UNIT-4/LUC_Chapter10_Structures.pdf" },
       { "path": "Notes_Programs/UNIT-4/LUC_Chapter6_DataTypes_StorageClasses.pdf" },
       { "path": "Notes_Programs/UNIT-4/Structures_MCA.pptx" },
-      { "path": "Notes_Programs/UNIT-4/typedef_enum_union_MCA.ppt" "hidden": true},
-      { "path": "Notes_Programs/UNIT-4/StorageClasses_MCA.ppt" "hidden": true }
+      { "path": "Notes_Programs/UNIT-4/typedef_enum_union_MCA.ppt", "hidden": true},
+      { "path": "Notes_Programs/UNIT-4/StorageClasses_MCA.ppt", "hidden": true }
       
     ],
     "UNIT-5": [
