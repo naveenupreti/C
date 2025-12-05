@@ -60,6 +60,10 @@
   "exampapers": [
     { "path": "ExamPapers/Sessional_1_PaperFormat_BMC102.pdf" },
     { "path": "ExamPapers/Session_2_PaperFormat_BMC102.pdf" },
-    { "path": "ExamPapers/Sessional_3_PaperFormat_BMC102.pdf" }
+    { "path": "ExamPapers/Sessional_3_PaperFormat_BMC102.pdf" },
+    { "path": "ExamPapers/AKTU-2021-22-PROBLEM-SOLVING-USING-C-KCA-102.pdf"},
+    { "path": "ExamPapers/AKTU-2022-23-PROBLEM-SOLVING-USING-C-KCA-102.pdf"},
+    { "path": "ExamPapers/AKTU-2023-24-PROBLEM-SOLVING-USING-C-KCA-102.pdf"},
+    { "path": "ExamPapers/AKTU-2024-25-PROBLEM-SOLVING-USING-C-KCA-102.pdf"}
   ]
 }
