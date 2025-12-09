@@ -39,6 +39,10 @@
     "UNIT-5": [
       { "path": "Notes_Programs/UNIT-5/LUC_Chapter12_13_FileHandling.pdf" },
       { "path": "Notes_Programs/UNIT-5/LUC_Chapter7_PreprocessorDirectives.pdf" },
+      { "path": "Notes_Programs/UNIT-5/DynamicMemoryAllocationMCA.ppt"},
+      { "path": "Notes_Programs/UNIT-5/FileHandlingMCA.ppt"},
+      { "path": "Notes_Programs/UNIT-5/CommandLineArguments.c"},
+      { "path": "Notes_Programs/UNIT-5/PreprocessorDirectivesMCA.pptx"},
       { "path": "Notes_Programs/UNIT-5/SHAPES.pdf"},
       { "path": "Notes_Programs/UNIT-5/JUSTIFY.pdf"}
     ]
