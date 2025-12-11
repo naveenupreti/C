@@ -49,7 +49,9 @@
   },
 
   "assignments": [
-    { "path": "Assignments/ImportantQuestions_BMC102_ProblemSolvingUsingC.pdf" }
+    { "path": "Assignments/ImportantQuestions_BMC102_ProblemSolvingUsingC.pdf" },
+    { "path": "Assignments/FrontPageBMC151PracticalFile.pdf"},
+    { "path": "Assignments/PracticalAssignmentList_ProblemSolvingUsingC_BMC151.pdf"}
   ],
 
   "ebooks": [
