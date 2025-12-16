@@ -1,77 +1,399 @@
 {
   "syllabus": [
-    { "path": "Syllabus/BMC102_151_Problem_Solving_Using_C_Syllabus_MCA_1st_Sem.pdf" },
-    { "path": "Syllabus/MCA_First_Year_Detailed_Syllabus_2024-25.pdf" }
+    {
+      "path": "Syllabus/BMC102_151_Problem_Solving_Using_C_Syllabus_MCA_1st_Sem.pdf"
+    },
+    {
+      "path": "Syllabus/MCA_First_Year_Detailed_Syllabus_2024-25.pdf"
+    },
+    {
+      "path": "Syllabus/Text File.txt",
+      "hidden": true
+    }
   ],
-
   "notes_programs": {
     "UNIT-1": [
-      { "path": "Notes_Programs/UNIT-1/Structured_Programming.pdf" },
-      { "path": "Notes_Programs/UNIT-1/LUC_Chapter1_Introduction.pdf" },
-      { "path": "Notes_Programs/UNIT-1/LUC_Chapter11_ConsoleInputOutput.pdf" },
-      { "path": "Notes_Programs/UNIT-1/LUC_PrecedenceTable_StandardLibraryFunctions_ASCII_chart.pdf" },
-      { "path": "Notes_Programs/UNIT-1/test.c", "hidden": true },
-      { "path": "Notes_Programs/UNIT-1/data_types_size.c" }
+      {
+        "path": "Notes_Programs/UNIT-1/Structured_Programming.pdf"
+      },
+      {
+        "path": "Notes_Programs/UNIT-1/LUC_Chapter1_Introduction.pdf"
+      },
+      {
+        "path": "Notes_Programs/UNIT-1/LUC_Chapter11_ConsoleInputOutput.pdf"
+      },
+      {
+        "path": "Notes_Programs/UNIT-1/LUC_PrecedenceTable_StandardLibraryFunctions_ASCII_chart.pdf"
+      },
+      {
+        "path": "Notes_Programs/UNIT-1/test.c",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-1/data_types_size.c"
+      },
+      {
+        "path": "Notes_Programs/UNIT-1/getch.c",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-1/Format specifiers in C.pdf",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-1/GCC Compilation Process.docx",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-1/Algorithms & Flowcharts.ppt",
+        "hidden": true
+      }
     ],
     "UNIT-2": [
-      { "path": "Notes_Programs/UNIT-2/LUC_Chapter2_Decision_Control_Structure.pdf" },
-      { "path": "Notes_Programs/UNIT-2/LUC_Chapter4_switch_case.pdf" },
-      { "path": "Notes_Programs/UNIT-2/LUC_Chapter3_Loops.pdf" },
-      { "path": "Notes_Programs/UNIT-2/LUC_Chapter5_Functions_and_Pointers.pdf" }
+      {
+        "path": "Notes_Programs/UNIT-2/LUC_Chapter2_Decision_Control_Structure.pdf"
+      },
+      {
+        "path": "Notes_Programs/UNIT-2/LUC_Chapter4_switch_case.pdf"
+      },
+      {
+        "path": "Notes_Programs/UNIT-2/LUC_Chapter3_Loops.pdf"
+      },
+      {
+        "path": "Notes_Programs/UNIT-2/LUC_Chapter5_Functions_and_Pointers.pdf"
+      }
     ],
     "UNIT-3": [
-      { "path": "Notes_Programs/UNIT-3/LUC_Chapter5_Functions_and_Pointers.pdf" },
-      { "path": "Notes_Programs/UNIT-3/LUC_Chapter8_Arrays.pdf" },
-      { "path": "Notes_Programs/UNIT-3/LUC_Chapter9_Strings.pdf" },
-      { "path": "Notes_Programs/UNIT-3/string_paragraph_input.c"},
-      { "path": "Notes_Programs/UNIT-3/StringFunctions.c"},
-      { "path": "Notes_Programs/UNIT-3/test.c", "hidden": true }
+      {
+        "path": "Notes_Programs/UNIT-3/LUC_Chapter5_Functions_and_Pointers.pdf"
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/LUC_Chapter8_Arrays.pdf"
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/LUC_Chapter9_Strings.pdf"
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/string_paragraph_input.c"
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/StringFunctions.c"
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/test.c",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/CallByValue_Reference.c",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/OneDArray_function.c",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/Iteration and Recursion.docx",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/TwoDArray_function.c",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/array2D.c",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/Pointers in C.ppt",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/Functions and Pointers for MCA.ppt",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/StringUsingPointers.c",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/FunctionPointer.pdf",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/FunctionPointer.docx",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/Iteration and Recursion.pdf",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/pointer.c",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/String.c",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/userchoice.c",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/ArrayOfPointers.c",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/Array_of_Pointers.c",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/ArrayProgram.c",
+        "hidden": true
+      }
     ],
     "UNIT-4": [
-      { "path": "Notes_Programs/UNIT-4/LUC_Chapter10_Structures.pdf" },
-      { "path": "Notes_Programs/UNIT-4/LUC_Chapter6_DataTypes_StorageClasses.pdf" },
-      { "path": "Notes_Programs/UNIT-4/Structures_MCA.pptx" },
-      { "path": "Notes_Programs/UNIT-4/typedef_enum_union_MCA.ppt"},
-      { "path": "Notes_Programs/UNIT-4/StorageClasses_MCA.ppt" },
-      { "path": "Notes_Programs/UNIT-4/structure_union.c" }
-      
+      {
+        "path": "Notes_Programs/UNIT-4/LUC_Chapter10_Structures.pdf"
+      },
+      {
+        "path": "Notes_Programs/UNIT-4/LUC_Chapter6_DataTypes_StorageClasses.pdf"
+      },
+      {
+        "path": "Notes_Programs/UNIT-4/Structures_MCA.pptx"
+      },
+      {
+        "path": "Notes_Programs/UNIT-4/typedef_enum_union_MCA.ppt"
+      },
+      {
+        "path": "Notes_Programs/UNIT-4/StorageClasses_MCA.ppt"
+      },
+      {
+        "path": "Notes_Programs/UNIT-4/structure_union.c"
+      },
+      {
+        "path": "Notes_Programs/UNIT-4/enum.c",
+        "hidden": true
+      }
     ],
     "UNIT-5": [
-      { "path": "Notes_Programs/UNIT-5/LUC_Chapter12_13_FileHandling.pdf" },
-      { "path": "Notes_Programs/UNIT-5/LUC_Chapter7_PreprocessorDirectives.pdf" },
-      { "path": "Notes_Programs/UNIT-5/DynamicMemoryAllocationMCA.ppt"},
-      { "path": "Notes_Programs/UNIT-5/FileHandlingMCA.ppt"},
-      { "path": "Notes_Programs/UNIT-5/CommandLineArguments.c"},
-      { "path": "Notes_Programs/UNIT-5/PreprocessorDirectivesMCA.pptx"},
-      { "path": "Notes_Programs/UNIT-5/SHAPES.pdf"},
-      { "path": "Notes_Programs/UNIT-5/JUSTIFY.pdf"}
+      {
+        "path": "Notes_Programs/UNIT-5/LUC_Chapter12_13_FileHandling.pdf"
+      },
+      {
+        "path": "Notes_Programs/UNIT-5/LUC_Chapter7_PreprocessorDirectives.pdf"
+      },
+      {
+        "path": "Notes_Programs/UNIT-5/DynamicMemoryAllocationMCA.ppt"
+      },
+      {
+        "path": "Notes_Programs/UNIT-5/FileHandlingMCA.ppt"
+      },
+      {
+        "path": "Notes_Programs/UNIT-5/CommandLineArguments.c"
+      },
+      {
+        "path": "Notes_Programs/UNIT-5/PreprocessorDirectivesMCA.pptx"
+      },
+      {
+        "path": "Notes_Programs/UNIT-5/SHAPES.pdf"
+      },
+      {
+        "path": "Notes_Programs/UNIT-5/JUSTIFY.pdf"
+      },
+      {
+        "path": "Notes_Programs/UNIT-5/filecopy.c",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-5/DynamicMemoryAllocation.c",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-5/cla.c",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-5/filecopycla.c",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-5/fread.c",
+        "hidden": true
+      },
+      {
+        "path": "Notes_Programs/UNIT-5/showfilecla.c",
+        "hidden": true
+      }
     ]
   },
-
   "assignments": [
-    { "path": "Assignments/ImportantQuestions_BMC102_ProblemSolvingUsingC.pdf" },
-    { "path": "Assignments/FrontPageBMC151PracticalFile.pdf"},
-    { "path": "Assignments/PracticalAssignmentList_ProblemSolvingUsingC_BMC151.pdf"}
+    {
+      "path": "Assignments/ImportantQuestions_BMC102_ProblemSolvingUsingC.pdf"
+    },
+    {
+      "path": "Assignments/FrontPageBMC151PracticalFile.pdf"
+    },
+    {
+      "path": "Assignments/PracticalAssignmentList_ProblemSolvingUsingC_BMC151.pdf"
+    },
+    {
+      "path": "Assignments/TurboC++ Installaion on Linux.pdf",
+      "hidden": true
+    },
+    {
+      "path": "Assignments/FrontPageBMC151PracticalFile.docx",
+      "hidden": true
+    },
+    {
+      "path": "Assignments/PracticalAssignmentList_ProblemSolvingUsingC_BMC151.docx",
+      "hidden": true
+    }
   ],
-
   "ebooks": [
-    { "path": "ebooks/LetUsC_YPK_17thEdition.pdf" },
-    { "path": "ebooks/Exploring_C.pdf", "hidden": true },
-    { "path": "ebooks/LetUsC_YPK_5thEdition.pdf" },
-    { "path": "ebooks/C_The_Complete_Reference_4th_Edition_Herbert Schildt.pdf" },
-    { "path": "ebooks/WebTutorials.html", "hidden": true },
-    { "path": "ebooks/C_Programming_Tutorial_tutorialspoint.com.pdf", "hidden": true },
-    { "path": "ebooks/Deitel_C_How_To_Program_6th_Edition.pdf", "hidden": true },
-    { "path": "ebooks/C_Programming_Tutorial_K&R.pdf", "hidden": true }
+    {
+      "path": "ebooks/LetUsC_YPK_17thEdition.pdf"
+    },
+    {
+      "path": "ebooks/Exploring_C.pdf",
+      "hidden": true
+    },
+    {
+      "path": "ebooks/LetUsC_YPK_5thEdition.pdf"
+    },
+    {
+      "path": "ebooks/C_The_Complete_Reference_4th_Edition_Herbert Schildt.pdf"
+    },
+    {
+      "path": "ebooks/WebTutorials.html",
+      "hidden": true
+    },
+    {
+      "path": "ebooks/C_Programming_Tutorial_tutorialspoint.com.pdf",
+      "hidden": true
+    },
+    {
+      "path": "ebooks/Deitel_C_How_To_Program_6th_Edition.pdf",
+      "hidden": true
+    },
+    {
+      "path": "ebooks/C_Programming_Tutorial_K&R.pdf",
+      "hidden": true
+    },
+    {
+      "path": "ebooks/DebianLinuxCommands.txt",
+      "hidden": true
+    },
+    {
+      "path": "ebooks/test.py",
+      "hidden": true
+    },
+    {
+      "path": "ebooks/c-programming-in-linux.pdf",
+      "hidden": true
+    },
+    {
+      "path": "ebooks/TurboC++ Installaion on Linux.pdf",
+      "hidden": true
+    },
+    {
+      "path": "ebooks/unix_tutorial.pdf",
+      "hidden": true
+    },
+    {
+      "path": "ebooks/LUC_split_chapters",
+      "hidden": true
+    },
+    {
+      "path": "ebooks/21st Century C, 2nd Edition.pdf",
+      "hidden": true
+    },
+    {
+      "path": "ebooks/UnixProgrammingTools.pdf",
+      "hidden": true
+    },
+    {
+      "path": "ebooks/C in a Nutshell, Second Edition.pdf",
+      "hidden": true
+    },
+    {
+      "path": "ebooks/computer_systems_a_programmers_perspective.pdf",
+      "hidden": true
+    },
+    {
+      "path": "ebooks/data_types_size.c",
+      "hidden": true
+    },
+    {
+      "path": "ebooks/Think Like a Programmer - An Intro. to Creative Problem Solving - V. Spraul (No Starch, 2012) BBS.pdf",
+      "hidden": true
+    },
+    {
+      "path": "ebooks/WebTutorials.txt",
+      "hidden": true
+    },
+    {
+      "path": "ebooks/C Programming Tutorial.pdf",
+      "hidden": true
+    }
   ],
-
   "exampapers": [
-    { "path": "ExamPapers/Sessional_1_PaperFormat_BMC102.pdf" },
-    { "path": "ExamPapers/Session_2_PaperFormat_BMC102.pdf" },
-    { "path": "ExamPapers/Sessional_3_PaperFormat_BMC102.pdf" },
-    { "path": "ExamPapers/AKTU-2021-22-PROBLEM-SOLVING-USING-C-KCA-102.pdf"},
-    { "path": "ExamPapers/AKTU-2022-23-PROBLEM-SOLVING-USING-C-KCA-102.pdf"},
-    { "path": "ExamPapers/AKTU-2023-24-PROBLEM-SOLVING-USING-C-KCA-102.pdf"},
-    { "path": "ExamPapers/AKTU-2024-25-PROBLEM-SOLVING-USING-C-KCA-102.pdf"}
+    {
+      "path": "ExamPapers/Sessional_1_PaperFormat_BMC102.pdf"
+    },
+    {
+      "path": "ExamPapers/Session_2_PaperFormat_BMC102.pdf"
+    },
+    {
+      "path": "ExamPapers/Sessional_3_PaperFormat_BMC102.pdf"
+    },
+    {
+      "path": "ExamPapers/AKTU-2021-22-PROBLEM-SOLVING-USING-C-KCA-102.pdf"
+    },
+    {
+      "path": "ExamPapers/AKTU-2022-23-PROBLEM-SOLVING-USING-C-KCA-102.pdf"
+    },
+    {
+      "path": "ExamPapers/AKTU-2023-24-PROBLEM-SOLVING-USING-C-KCA-102.pdf"
+    },
+    {
+      "path": "ExamPapers/AKTU-2024-25-PROBLEM-SOLVING-USING-C-KCA-102.pdf"
+    },
+    {
+      "path": "ExamPapers/Sessional Exam Paper BMC102_MCA 1st Sem_Feb_2025.docx",
+      "hidden": true
+    },
+    {
+      "path": "ExamPapers/Sessional_3_PaperFormat_BMC102.docx",
+      "hidden": true
+    },
+    {
+      "path": "ExamPapers/Sessional_1_BMC102.docx",
+      "hidden": true
+    },
+    {
+      "path": "ExamPapers/Session_2_PaperFormat_BMC102.docx",
+      "hidden": true
+    },
+    {
+      "path": "ExamPapers/SecondSessionalBMC102.docx",
+      "hidden": true
+    },
+    {
+      "path": "ExamPapers/Sessional Exam Paper BMC102_MCA 1st Sem_Nov_2024.docx",
+      "hidden": true
+    },
+    {
+      "path": "ExamPapers/FirstSessionalBMC102.docx",
+      "hidden": true
+    },
+    {
+      "path": "ExamPapers/Sessional_1_PaperFormat_BMC102.docx",
+      "hidden": true
+    },
+    {
+      "path": "ExamPapers/Sessional_2_Paper_BMC102.docx",
+      "hidden": true
+    }
   ]
 }
