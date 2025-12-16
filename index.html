@@ -5,49 +5,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>C Programming Notes Repository</title>
 <style>
-  html { scroll-padding-top: 50px; }
+  html { scroll-padding-top: 100px; }
   body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f5f7fa; color:#333; font-size:1rem; }
 
   /* Header */
-  header { background:#2d6cdf; color:white; padding:5px 10px; text-align:center; position:sticky; top:0; z-index:1000; }
+  header { background:#2d6cdf; color:white; padding:10px; text-align:center; position:sticky; top:0; z-index:1000; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
   header h1 { margin:0; font-size:1.3em; display:inline; }
   header p { margin:2px 0 0 0; font-size:0.75em; color:yellow;}
 
-  nav { margin-top:3px; }
+  nav { margin-top:5px; }
   nav a { color:white; text-decoration:none; margin:0 6px; font-weight:bold; padding:3px 6px; border-radius:4px; transition:0.3s; display:inline-block; margin-bottom:3px; font-size:0.9em; }
   nav a:hover { text-decoration:underline; color:#ffdd57; }
   nav a.active { background:#ffdd57; color:#2d6cdf; }
 
-  /* Controls */
-  #controls { margin-top:3px; display:flex; gap:5px; justify-content:center; align-items:center; flex-wrap:wrap; }
-  #refreshBtn { background:#ffdd57; color:#2d6cdf; border:none; padding:4px 8px; border-radius:5px; cursor:pointer; font-weight:bold; margin-top:3px; font-size:0.85em; }
-  #refreshBtn:hover { background:#ffd633; }
+  /* Controls & Search */
+  #controls { margin-top:8px; display:flex; gap:10px; justify-content:center; align-items:center; flex-wrap:wrap; }
+
+  .search-container { display: flex; gap: 5px; }
+  #searchInput { padding: 6px; border-radius: 4px; border: none; width: 200px; font-size: 0.9em;}
+  #searchBtn, #refreshBtn { background:#ffdd57; color:#2d6cdf; border:none; padding:6px 10px; border-radius:5px; cursor:pointer; font-weight:bold; font-size:0.85em; }
+  #searchBtn:hover, #refreshBtn:hover { background:#ffd633; }
 
   /* Section headings */
   h2 { background:#e8eefc; padding:8px; border-left:4px solid #2d6cdf; margin-top:20px; font-size:1.1em; }
 
   /* Lists */
+  ul { list-style-type: none; padding-left: 0; }
   li { margin:4px 0; padding:4px 8px; word-break:break-word; display:block; font-size:0.95em; }
   .actions { float:right; }
-  .unit-content li .actions { display:inline-block; margin-top:2px; float:none; }
 
   /* Collapsible titles */
   b.unit-title, b.ebook-title, b.syllabus-title, b.exampaper-title, b.assignment-title {
-    cursor:pointer;
-    display:inline-block;
-    color:#2d6cdf;
-    margin:6px 0;
-    padding:3px 6px;
-    text-align:left;
-    font-size:1em;
+    cursor:pointer; display:inline-block; color:#2d6cdf; margin:6px 0; padding:3px 6px; text-align:left; font-size:1em; user-select: none;
   }
-  .collapsible-icon {
-    display:inline-block;
-    width:16px;
-    text-align:center;
-    margin-right:4px;
-    font-weight:bold;
-  }
+  .collapsible-icon { display:inline-block; width:16px; text-align:center; margin-right:4px; font-weight:bold; }
 
   a { text-decoration:none; color:#1a4bb7; font-weight:500; }
   a:hover { text-decoration:underline; color:#d35400; }
@@ -58,25 +49,27 @@
   /* Collapsible content */
   .unit-content { margin-left:15px; margin-top:3px; display:none; }
 
+  /* Search Highlighting */
+  .highlight { background-color: yellow; font-weight: bold; }
+
   /* Container */
-  .container { max-width:960px; width:95%; margin:auto; padding:15px; background:white; box-shadow:0 0 10px rgba(0,0,0,0.1); border-radius:8px; }
+  .container { max-width:960px; width:95%; margin:auto; padding:15px; background:white; box-shadow:0 0 10px rgba(0,0,0,0.1); border-radius:8px; margin-top: 10px; }
 
   /* Footer */
   footer { text-align:center; padding:10px; margin-top:20px; background:#2d6cdf; color:white; font-size:0.8em; }
 
-  /* Responsive */
   @media(max-width:600px){
     nav a { margin:2px 1px; padding:3px 4px; font-size:0.75em; }
     .container { padding:10px; }
-    b.unit-title, b.ebook-title, b.syllabus-title, b.exampaper-title, b.assignment-title { font-size:0.9em; display:block; }
     #controls { flex-direction:column; }
+    #searchInput { width: 100%; box-sizing: border-box; }
   }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>📘 C Programming Repository</h1>
+  <h1>?? C Programming Repository</h1>
   <p>:BMC102::Problem Solving Using C::MCA 1st Semester:</p>
 
   <nav>
@@ -88,11 +81,17 @@
   </nav>
 
   <div id="controls">
-    <button id="refreshBtn">🔄 Refresh Data</button>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search files...">
+        <button id="searchBtn">??</button>
+    </div>
+    <button id="refreshBtn">?? Refresh Data</button>
   </div>
 </header>
 
 <div class="container">
+  <div id="search-status" style="display:none; padding:10px; color:#666; font-style:italic;"></div>
+
   <h2 id="syllabus">Syllabus</h2>
   <div id="syllabus-list"></div>
 
@@ -119,14 +118,12 @@ const rawBase = "https://raw.githubusercontent.com/naveenupreti/Problem_Solving_
 // Cache-buster
 function getCacheBuster() { return "?v=" + new Date().getTime(); }
 
-// Normalize file entry
 function normalizeFileEntry(entry) {
   if (typeof entry === "string") return { path: entry };
   if (typeof entry === "object" && entry !== null) return entry;
   return null;
 }
 
-// Create collapsible icon element
 function createIcon() {
   const icon = document.createElement("span");
   icon.className = "collapsible-icon";
@@ -134,7 +131,18 @@ function createIcon() {
   return icon;
 }
 
-// Render collapsible list (syllabus, assignments, ebooks, exampapers)
+// Helper to toggle visibility
+function toggleSection(ul, icon, forceOpen = false) {
+  if (forceOpen) {
+    ul.style.display = "block";
+    icon.textContent = "?";
+  } else {
+    const isHidden = ul.style.display === "none" || ul.style.display === "";
+    ul.style.display = isHidden ? "block" : "none";
+    icon.textContent = isHidden ? "?" : "+";
+  }
+}
+
 function renderCollapsibleList(containerId, files, cssClass) {
   const container = document.getElementById(containerId);
   container.innerHTML = "";
@@ -160,6 +168,7 @@ function renderCollapsibleList(containerId, files, cssClass) {
     const filePath = rawBase + fileObj.path + cacheBuster;
     const fileName = fileObj.title || fileObj.path.split("/").pop();
     const liFile = document.createElement("li");
+    liFile.className = "file-item"; // Marker for search
     liFile.innerHTML = `<a href="${filePath}" target="_blank" rel="noopener">${fileName}</a>
       <span class="actions">
         <a class="download" href="${filePath}" download>Download</a>
@@ -170,13 +179,9 @@ function renderCollapsibleList(containerId, files, cssClass) {
   li.appendChild(ul);
   container.appendChild(li);
 
-  li.querySelector("b").addEventListener("click", () => {
-    ul.style.display = ul.style.display === "block" ? "none" : "block";
-    icon.textContent = ul.style.display === "block" ? "−" : "+";
-  });
+  li.querySelector("b").addEventListener("click", () => toggleSection(ul, icon));
 }
 
-// Render Notes_Programs with outer and inner collapsibles
 function renderNotesPrograms(containerId, unitsObj) {
   const container = document.getElementById(containerId);
   container.innerHTML = "";
@@ -186,7 +191,7 @@ function renderNotesPrograms(containerId, unitsObj) {
     return;
   }
 
-  // Outer collapsible for Notes_Programs
+  // Outer collapsible
   const liOuter = document.createElement("li");
   const iconOuter = createIcon();
   liOuter.innerHTML = `<b class="unit-title"></b>`;
@@ -215,6 +220,7 @@ function renderNotesPrograms(containerId, unitsObj) {
       const filePath = rawBase + fileObj.path + cacheBuster;
       const fileName = fileObj.title || fileObj.path.split("/").pop();
       const liFile = document.createElement("li");
+      liFile.className = "file-item"; // Marker for search
       liFile.innerHTML = `<a href="${filePath}" target="_blank" rel="noopener">${fileName}</a>
         <span class="actions">
           <a class="download" href="${filePath}" download>Download</a>
@@ -225,24 +231,83 @@ function renderNotesPrograms(containerId, unitsObj) {
     li.appendChild(ul);
     ulOuter.appendChild(li);
 
-    // Unit-level collapsible
-    li.querySelector("b").addEventListener("click", () => {
-      ul.style.display = ul.style.display === "block" ? "none" : "block";
-      icon.textContent = ul.style.display === "block" ? "−" : "+";
-    });
+    li.querySelector("b").addEventListener("click", () => toggleSection(ul, icon));
   }
 
   liOuter.appendChild(ulOuter);
   container.appendChild(liOuter);
 
-  // Notes_Programs collapsible
-  liOuter.querySelector("b").addEventListener("click", () => {
-    ulOuter.style.display = ulOuter.style.display === "block" ? "none" : "block";
-    iconOuter.textContent = ulOuter.style.display === "block" ? "−" : "+";
-  });
+  liOuter.querySelector("b").addEventListener("click", () => toggleSection(ulOuter, iconOuter));
 }
 
-// Load data.json
+// --- SEARCH FUNCTIONALITY ---
+function performSearch() {
+  const input = document.getElementById("searchInput");
+  const filter = input.value.toLowerCase();
+  const fileItems = document.querySelectorAll(".file-item");
+  const statusDiv = document.getElementById("search-status");
+
+  let matchCount = 0;
+
+  // Reset if empty
+  if (!filter) {
+    fileItems.forEach(item => {
+        item.style.display = "";
+        item.innerHTML = item.innerHTML.replace(/<span class="highlight">(.*?)<\/span>/gi, "$1");
+    });
+    // Collapse all (optional, but cleaner)
+    document.querySelectorAll(".unit-content").forEach(ul => ul.style.display = "none");
+    document.querySelectorAll(".collapsible-icon").forEach(icon => icon.textContent = "+");
+    statusDiv.style.display = "none";
+    return;
+  }
+
+  fileItems.forEach(item => {
+    const link = item.querySelector("a");
+    const text = link.textContent;
+    const textLower = text.toLowerCase();
+
+    // Remove existing highlights first
+    link.innerHTML = link.innerHTML.replace(/<span class="highlight">(.*?)<\/span>/gi, "$1");
+
+    if (textLower.includes(filter)) {
+        item.style.display = "";
+        matchCount++;
+
+        // Highlight logic
+        const regex = new RegExp(`(${filter})`, "gi");
+        link.innerHTML = text.replace(regex, `<span class="highlight">$1</span>`);
+
+        // Expand Parents
+        let parent = item.parentElement;
+        while (parent) {
+            if (parent.classList.contains("unit-content")) {
+                parent.style.display = "block";
+                // Find previous sibling icon to update
+                const siblingTitle = parent.previousElementSibling; 
+                if(siblingTitle && siblingTitle.tagName === 'B') {
+                    const icon = siblingTitle.querySelector(".collapsible-icon");
+                    if(icon) icon.textContent = "?";
+                }
+            }
+            parent = parent.parentElement;
+            if (parent.classList.contains("container")) break;
+        }
+    } else {
+        item.style.display = "none";
+    }
+  });
+
+  statusDiv.style.display = "block";
+  statusDiv.textContent = matchCount > 0 ? `Found ${matchCount} matches.` : "No matches found.";
+}
+
+// Event Listeners
+document.getElementById("searchBtn").addEventListener("click", performSearch);
+document.getElementById("searchInput").addEventListener("keyup", (e) => {
+    if (e.key === "Enter") performSearch();
+});
+
 async function loadData(force = false) {
   if (force) localStorage.removeItem("cNotesData");
 
@@ -267,7 +332,6 @@ async function loadData(force = false) {
   renderCollapsibleList("exampapers-list", data.exampapers, "exampaper-title");
 }
 
-// Initialize
 document.getElementById("refreshBtn").addEventListener("click", () => loadData(true));
 loadData(false);
 </script>
