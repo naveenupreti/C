@@ -85,11 +85,11 @@
       },
       {
         "path": "Notes_Programs/UNIT-3/CallByValue_Reference.c",
-        "hidden": true
+        "hidden": false
       },
       {
         "path": "Notes_Programs/UNIT-3/OneDArray_function.c",
-        "hidden": true
+        "hidden": false
       },
       {
         "path": "Notes_Programs/UNIT-3/Iteration and Recursion.docx",
@@ -97,7 +97,7 @@
       },
       {
         "path": "Notes_Programs/UNIT-3/TwoDArray_function.c",
-        "hidden": true
+        "hidden": false
       },
       {
         "path": "Notes_Programs/UNIT-3/array2D.c",
@@ -109,11 +109,11 @@
       },
       {
         "path": "Notes_Programs/UNIT-3/Functions and Pointers for MCA.ppt",
-        "hidden": true
+        "hidden": false
       },
       {
         "path": "Notes_Programs/UNIT-3/StringUsingPointers.c",
-        "hidden": true
+        "hidden": false
       },
       {
         "path": "Notes_Programs/UNIT-3/FunctionPointer.pdf",
