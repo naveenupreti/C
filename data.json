@@ -129,7 +129,7 @@
       },
       {
         "path": "Notes_Programs/UNIT-3/pointer.c",
-        "hidden": true
+        "hidden": false
       },
       {
         "path": "Notes_Programs/UNIT-3/String.c",
@@ -207,15 +207,15 @@
       },
       {
         "path": "Notes_Programs/UNIT-5/DynamicMemoryAllocation.c",
-        "hidden": true
+        "hidden": false
       },
       {
         "path": "Notes_Programs/UNIT-5/cla.c",
-        "hidden": true
+        "hidden": false
       },
       {
         "path": "Notes_Programs/UNIT-5/filecopycla.c",
-        "hidden": true
+        "hidden": false
       },
       {
         "path": "Notes_Programs/UNIT-5/fread.c",
