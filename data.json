@@ -9,6 +9,10 @@
     {
       "path": "Syllabus/TestFile.txt",
       "hidden": true
+    },
+    {
+      "path": "Syllabus/test.txt",
+      "hidden": true
     }
   ],
   "notes_programs": {
