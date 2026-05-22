@@ -112,14 +112,14 @@
   Developed & Maintained by Naveen Upreti | 2025
 </footer>
 <script>
-  const rawBase = "https://raw.githubusercontent.com/naveenupreti/Problem_Solving_Using_C/main/";
+  const rawBase = "https://raw.githubusercontent.com/naveenupreti/C-Notes/main/";
   
   // Cache-buster
   function getCacheBuster() { return "?v=" + new Date().getTime(); }
   
   function normalizeFileEntry(entry) {
     if (typeof entry === "string") return { path: entry };
-    if (typeof entry === "object" && entry !== null) return entry;
+    if (typeof entry === "object" && entry !== null) return entry; 
     return null;
   }
   
