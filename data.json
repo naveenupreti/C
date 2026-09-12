@@ -22,9 +22,6 @@
         "path": "Notes_Programs/UNIT-1/LUC_PrecedenceTable_StandardLibraryFunctions_ASCII_chart.pdf"
       },
       {
-        "path": "Notes_Programs/UNIT-1/data_types_size.c"
-      },
-      {
         "path": "Notes_Programs/UNIT-1/getch.c",
         "hidden": true
       },
@@ -46,6 +43,10 @@
       },
       {
         "path": "Notes_Programs/UNIT-1/c_program_basic_structure.c",
+        "hidden": false
+      },
+      {
+        "path": "Notes_Programs/UNIT-1/c_data_types_size.c",
         "hidden": false
       }
     ],
