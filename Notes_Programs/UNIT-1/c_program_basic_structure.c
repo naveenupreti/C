@@ -1,5 +1,6 @@
 /* ============================================================
    1. DOCUMENTATION SECTION
+   Purpose: Tells who wrote the program, what it does, and how it works.
    ============================================================ */
 
 /*
@@ -10,6 +11,7 @@
 
 /* ============================================================
    2. LINKING SECTION
+   Purpose: Connects header files so the program can use built-in functions like printf().
    ============================================================ */
 
 #include <stdio.h>
@@ -17,6 +19,7 @@
 
 /* ============================================================
    3. DEFINITION SECTION
+   Purpose: Defines constants and macro substitutions that are replaced before compilation.
    ============================================================ */
 
 /*
@@ -30,6 +33,7 @@
 
 /* ============================================================
    4. GLOBAL VARIABLE / GLOBAL CONSTANT DECLARATION
+   Purpose: Declares variables and constants that every function in this file can access.
    ============================================================ */
 
 /*
@@ -54,6 +58,7 @@ const int MAX_MARKS = 100;
 
 /* ============================================================
    5. FUNCTION PROTOTYPES
+   Purpose: Informs the compiler in advance about custom functions, their return types, and arguments.
    ============================================================ */
 
 void displayNumber(void);
@@ -61,7 +66,8 @@ float calculateArea(float radius);
 
 
 /* ============================================================
-   6. main() FUNCTION. Program execution starts from here
+   6. main() FUNCTION
+   Purpose: The mandatory entry point where the operating system begins running the program.
    ============================================================ */
 
 int main(void)
@@ -82,7 +88,7 @@ int main(void)
     displayNumber();
 
     printf("Area of circle = %.2f\n", calculateArea(radius));
-    // Output: Area of circle = 78.54
+    // Output: Area of circle = 314.16
 
     return 0;
 }
@@ -90,6 +96,7 @@ int main(void)
 
 /* ============================================================
    7. USER-DEFINED FUNCTIONS
+   Purpose: Contains the actual logic and code bodies for the custom functions declared earlier.
    ============================================================ */
 
 void displayNumber(void)
