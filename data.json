@@ -48,6 +48,14 @@
       {
         "path": "Notes_Programs/UNIT-1/c_data_types_size.c",
         "hidden": false
+      },
+      {
+        "path": "Notes_Programs/UNIT-1/c_scanf.c",
+        "hidden": false
+      },
+      {
+        "path": "Notes_Programs/UNIT-1/c_printf.c",
+        "hidden": false
       }
     ],
     "UNIT-2": [
