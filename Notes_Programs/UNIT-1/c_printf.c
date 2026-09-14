@@ -2,9 +2,8 @@
              printf()
                 |
        +-----------------+
-       ?                 ?
-   Prints output      Returns int
-                         ?
+      Prints output      Returns int
+                         |
               Number of characters
               successfully printed
               
