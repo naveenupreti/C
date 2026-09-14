@@ -3,7 +3,7 @@
 | Rule                                                        | Example                    |
 | ----------------------------------------------------------- | -------------------------- |
 | 1. `scanf()` needs the address of ordinary variables        | `scanf("%d", &x);`         |
-| 2. Match format specifier with variable type                | `%d` ? `int`               |
+| 2. Match format specifier with variable type                | `%d` -> `int`               |
 | 3. `double` uses `%lf` in `scanf()`                         | `scanf("%lf", &d);`        |
 | 4. Put a space before `%c` when you want to skip whitespace | `scanf(" %c", &ch);`       |
 | 5. Multiple values can be read together                     | `scanf("%d %f", &i, &f);`  |
