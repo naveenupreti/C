@@ -437,7 +437,7 @@ int main()
 
     {
         int choice = 2;
-
+// choice can be integer or character. No float/String
         switch (choice)
         {
             case 1:
