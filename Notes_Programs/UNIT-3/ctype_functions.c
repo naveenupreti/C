@@ -32,7 +32,15 @@ int main(void)
 
     // 1. isalpha(): Checks whether the character is an alphabetic letter.
     printf("isalpha('A')   = %d\n", isalpha((unsigned char)'A') != 0);
-
+/*
+   Consider this statement:
+   printf("%d", isalpha('A') != 0);
+- isalpha('A') returns a nonzero value because A is a letter.
+- The expression != 0 converts that result into 1 (true).
+- If the character is not a letter, the result becomes 0 (false).
+This makes the output consistently 1 or 0, regardless of the exact nonzero value returned by the function.
+*/
+    
     // 2. isdigit(): Checks whether the character is a decimal digit.
     printf("isdigit('5')   = %d\n", isdigit((unsigned char)'5') != 0);
 
