@@ -1,8 +1,5 @@
-// C Program to print Array
-// of Pointers
+// C Program to print Array of Pointers
 #include <stdio.h>
-
-// Driver code
 int main()
 {
   int i;
@@ -12,7 +9,17 @@ int main()
 
   for (i = 0; i < 3; i++)
   {
-    printf("arr[%d]=%s, sizeof(arr[%d])=%d\n", i,arr[i],i,sizeof(arr[i]]));
+    printf("arr[%d]=%s, sizeof(arr[%d])=%d\n", i,arr[i],i,sizeof(arr[i]));
   }
   return 0;
 }
+
+/*
+Output:
+
+String array Elements are:
+sizeof(arr)=24
+arr[0]=Naveen, sizeof(arr[0])=8
+arr[1]=Chandra, sizeof(arr[1])=8
+arr[2]=Upreti, sizeof(arr[2])=8
+*/
