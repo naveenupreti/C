@@ -167,6 +167,14 @@
       {
         "path": "Notes_Programs/UNIT-3/ArrayProgram.c",
         "hidden": false
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/ctype_functions.c",
+        "hidden": false
+      },
+      {
+        "path": "Notes_Programs/UNIT-3/String_Functions_Demonstration.c",
+        "hidden": false
       }
     ],
     "UNIT-4": [
