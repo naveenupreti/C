@@ -326,3 +326,69 @@ int main(void)
 
     return 0;
 }
+/*
+Output:
+================================================
+       DEMONSTRATION OF 12 STRING FUNCTIONS
+================================================
+
+1. strlen() - STRING LENGTH
+String          : Hello
+Length          : 5
+
+2. strcpy() - STRING COPYING
+Source string   : Hello
+Copied string   : Hello
+
+3. strcat() - STRING CONCATENATION
+Before strcat() : Hello
+After strcat()  : Hello World
+
+4. strcmp() - STRING COMPARISON
+Compare cat, cat : 0
+Compare abc, abd : -1
+
+5. strrev() - STRING REVERSAL
+Before reversal : Hello
+After reversal  : olleH
+
+6. strupr() - UPPERCASE CONVERSION
+Before          : Hello World
+After           : HELLO WORLD
+
+7. strlwr() - LOWERCASE CONVERSION
+Before          : HELLO WORLD
+After           : hello world
+
+8. strchr() - FIRST CHARACTER OCCURRENCE
+Original string : banana
+Found character : a
+String from it  : anana
+Index           : 1
+
+9. strrchr() - LAST CHARACTER OCCURRENCE
+Original string : banana
+Found character : a
+String from it  : a
+Index           : 5
+
+10. strstr() - SUBSTRING SEARCH
+Original string : C programming is interesting
+String from match: is interesting
+Starting index   : 14
+
+11. strtok() - STRING TOKENIZATION
+Original string : Red,Green,Blue
+Token           : Red
+Token           : Green
+Token           : Blue
+
+12. strncmp() - LIMITED STRING COMPARISON
+Compare first 3 characters : 0
+Compare first 4 characters : 0
+Compare first 5 characters : -20
+
+================================================
+            DEMONSTRATION COMPLETED
+================================================
+*/
